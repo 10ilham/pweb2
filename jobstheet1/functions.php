@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,17 +19,19 @@
 
     <form method="post">
         <input type="text" name="panjang" placeholder="Masukkan Panjang">
-        <input type="text" name="lebar" placeholder="Masukkan Lebar">
+        <input type="text" name="lebar" placeholder="Masukkan Lebar"><br>
+        <input type="text" name="radius" placeholder="Masukkan Radius"><br>
         <input type="submit" value="Hitung">
     </form>
 
     <?php
-    if (isset($_POST['panjang']) && isset($_POST['lebar'])) {
+    if (isset($_POST['panjang']) && isset($_POST['lebar']) && isset($_POST['radius'])) {
         $panjang = $_POST['panjang'];
         $lebar = $_POST['lebar'];
+        $radius = $_POST['radius'];
 
         echo "Luas Persegi Panjang= " . persegi_panjang($panjang, $lebar) . "</br>";
-        echo "Luas Lingkaran = " . lingkaran($panjang) . "</br>";
+        echo "Luas Lingkaran = " . lingkaran($radius) . "</br>";
     }
     ?>
 </body>
