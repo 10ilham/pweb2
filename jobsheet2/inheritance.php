@@ -43,5 +43,5 @@ class mahasiswa extends manusia
     // Tampilkan isi property
     echo "Nama Depan saya : " . $informatika->tampilkan_nama_saya() . "<br>";
     echo "Nama Belakang : " . $informatika->tampilkan_nama_mahasiswa();
-    // Ciri pemanggilan turunan protected/private "$informatika->tampilkan_nama_saya()"
+    // Ciri pemanggilan turunan protected/private "$informatika->tampilkan_nama_saya()" tetapi tergantung
     // Ciri pemanggilan public "$informatika->nama_saya"
