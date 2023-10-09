@@ -19,7 +19,7 @@
     }
 
     // Menghitung Bilangan Prima
-    // Inisialisasi variabel
+    echo "</br>Perulangan DO-WHILE bilangan prima dari kurang dari 20 </br>";
     $i = 2;
 
     // Perulangan
@@ -35,7 +35,7 @@
 
         // Tampilkan bilangan prima
         if ($prima) {
-            echo $i . " ";
+            echo "$i<br>";
         }
 
         // Increment variabel

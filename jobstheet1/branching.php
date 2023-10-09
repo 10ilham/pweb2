@@ -10,7 +10,7 @@
     <form method="post">
         <label for="x">Masukkan Nilai x:</label>
         <input type="text" name="x">
-        <input type="submit" value="Cek">
+        <input type="submit" value="button">
     </form>
 
     <?php
