@@ -42,7 +42,7 @@ $db = new database;
 
 <div class="px-5">
 <h3>Data Mahasiswa</h3>
-<a href="input_mhs.php">Tambah Mahasiswa</a>
+<a class="btn btn-primary" href="input_mhs.php">Tambah Mahasiswa</a>
 
 <!-- Alert -->
 <?php
@@ -52,7 +52,9 @@ $db = new database;
 if(isset($_SESSION['eksekusi']) && $_SESSION['eksekusi']) {
 ?>
 <div class="alert alert-success" role="alert">
-    Data Berhasil Tersimpan!
+    <?php
+    echo $_SESSION['eksekusi'];
+    ?>
 </div>
 <?php
 // Hapus session 'eksekusi' setelah ditampilkan

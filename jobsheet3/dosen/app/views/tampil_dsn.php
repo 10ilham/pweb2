@@ -20,7 +20,7 @@ $db = new database;
               <div class="card-header">
                 <h3 class="card-title">Data Dosen</h3><br>
               </div>
-              <a class="btn btn-warning" href="input_dsn.php">Tambah Dosen</a>
+              <a class="btn btn-primary" href="input_dsn.php">Tambah Dosen</a>
               <!-- /.card-header -->
               <div class="card-body">
                 <table class="table table-bordered">

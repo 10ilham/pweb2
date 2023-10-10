@@ -15,12 +15,12 @@ $db = new database;
 <div class="container-fluid">
     <br>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 mx-auto">
             <div class="card card-success">
               <div class="card-header">
                 <h3 class="card-title">Data Mahasiswa</h3><br>
               </div>
-              <a class="btn btn-warning" href="input_mhs.php">Tambah Mahasiswa</a>
+              <a class="btn btn-primary" href="input_mhs.php">Tambah Mahasiswa</a>
               <!-- /.card-header -->
               <div class="card-body">
                 <table class="table table-bordered">
