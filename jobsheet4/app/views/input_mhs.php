@@ -1,26 +1,21 @@
-<h3>Tambah Data Mahasiswa</h3>
+<?php
+    session_start();
+?>
+<link rel="stylesheet" href="../views/css/tabel.css">
+<body>
+    <h3>Tambah Data Mahasiswa</h3>
+    <div>
+        <form action="proses_mhs.php?aksi=tambah" method="post">
+            <label for="nim">NIM</label>
+            <input type="text" id="nim" name="nim" placeholder="Masukkan NIM..">
 
-<form action="proses_mhs.php?aksi=tambah" method="post">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama..">
 
-    <table>
-        <tr>
-            <td>NIM</td>
-            <td><input type="text" name="nim"></td>
-        </tr>
-        <tr>
-            <td>Nama</td>
-            <td><input type="text" name="nama"></td>
-        </tr>
-        <tr>
-            <td>Alamat</td>
-            <td>
-                <textarea name="alamat" cols="30" rows="5"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><input type="submit" value="Simpan"></td>
-        </tr>
-    </table>
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" cols="30" rows="5" placeholder="Masukkan Alamat.."></textarea>
 
-</form>
+            <input type="submit" value="Simpan">
+        </form>
+    </div>
+</body>

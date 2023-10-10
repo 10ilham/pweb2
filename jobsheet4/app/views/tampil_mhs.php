@@ -1,6 +1,7 @@
 <?php
 //memanggil class database
 include '../classes/database.php';
+session_start();
 //instansiasi class database
 $db = new database;
 ?>
@@ -42,6 +43,23 @@ $db = new database;
 <div class="px-5">
 <h3>Data Mahasiswa</h3>
 <a href="input_mhs.php">Tambah Mahasiswa</a>
+
+<!-- Alert -->
+<?php
+// Mulai atau lanjutkan sesi
+
+// Periksa apakah ada session 'eksekusi' dan nilainya true
+if(isset($_SESSION['eksekusi']) && $_SESSION['eksekusi']) {
+?>
+<div class="alert alert-success" role="alert">
+    Data Berhasil Tersimpan!
+</div>
+<?php
+// Hapus session 'eksekusi' setelah ditampilkan
+unset($_SESSION['eksekusi']);
+}
+?>
+
 <table class="table">
     <tr>
         <th>No</th>

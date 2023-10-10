@@ -1,42 +1,31 @@
 <?php
 include "../classes/database.php";
+session_start();
 $db = new database();
 ?>
-
+<link rel="stylesheet" href="../views/css/tabel.css">
 <h3>Edit Data Mahasiswa</h3>
-
+<div>
 <form action="proses_mhs.php?aksi=update" method="post">
 
     <?php
     foreach ($db->edit($_GET['id']) as $d) {
     ?>
 
-        <table>
-            <tr>
-                <td>NIM</td>
-                <td>
-                    <input type="hidden" name="id" value="<?php echo $d['id'] ?>"> 
-                    <input type="text" name="nim" value="<?php echo $d['nim'] ?>">
-                </td>
-            </tr>
-            <tr>
-                <td>Nama</td>
-                <td><input type="text" name="nama" value="<?php echo $d['nama'] ?>"> </td>
-            </tr>
-            <tr>
-                <td>Alamat</td>
-                <td>
-                    <textarea name="alamat" cols="30" rows="5"><?php echo $d['alamat'] ?></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" value="Simpan">
-                </td>
-            </tr>
-        </table>
+        <label>NIM</label>
+        <input type="hidden" name="id" value="<?php echo $d['id'] ?>">
+        <input type="text" name="nim" value="<?php echo $d['nim'] ?>">
+
+        <label>Nama</label>
+        <input type="text" name="nama" value="<?php echo $d['nama'] ?>">
+
+        <label>Alamat</label>
+        <textarea name="alamat" cols="30" rows="5"><?php echo $d['alamat'] ?></textarea>
+
+        <input type="submit" value="Simpan">
 
     <?php
     }
     ?>
 </form>
+</div>
