@@ -11,30 +11,14 @@ $db = $database->getKoneksi();
 $dosenController = new DosenController($db);
 $dosen = $dosenController->getAllDosen();
 ?>
+<link rel="stylesheet" href="/pweb2/jobsheet5/views/mahasiswa/tabel.css">
 
 <div class="px-5">
 <h3>Data Dosen</h3>
 <a class="btn btn-primary" href="tambah_dosen">Tambah Dosen</a>
 
-<!-- Alert -->
-<?php
-// Mulai atau lanjutkan sesi
 
-// Periksa apakah ada session 'eksekusi' dan nilainya true
-if(isset($_SESSION['eksekusi']) && $_SESSION['eksekusi']) {
-?>
-<div class="alert alert-success" role="alert">
-    <?php
-    echo $_SESSION['eksekusi'];
-    ?>
-</div>
-<?php
-// Hapus session 'eksekusi' setelah ditampilkan
-unset($_SESSION['eksekusi']);
-}
-?>
-
-<table class="table">
+<table id="design" class="table">
     <tr>
         <th>No</th>
         <th>NIDN</th>
