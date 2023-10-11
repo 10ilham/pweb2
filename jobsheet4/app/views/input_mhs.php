@@ -6,14 +6,14 @@
     <h3>Tambah Data Mahasiswa</h3>
     <div>
         <form action="proses_mhs.php?aksi=tambah" method="post">
-            <label for="nim">NIM</label>
-            <input type="text" id="nim" name="nim" placeholder="Masukkan NIM..">
+            <label>NIM</label>
+            <input type="text" name="nim" placeholder="Masukkan NIM..">
 
-            <label for="nama">Nama</label>
-            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama..">
+            <label>Nama</label>
+            <input type="text" name="nama" placeholder="Masukkan Nama..">
 
-            <label for="alamat">Alamat</label>
-            <textarea id="alamat" name="alamat" cols="30" rows="5" placeholder="Masukkan Alamat.."></textarea>
+            <label>Alamat</label>
+            <textarea name="alamat" cols="30" rows="5" placeholder="Masukkan Alamat.."></textarea>
 
             <input type="submit" value="Simpan">
         </form>
