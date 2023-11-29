@@ -1,2 +1,2 @@
-# pweb2
+# Pweb2
 Praktikum Pemrograman Web2
